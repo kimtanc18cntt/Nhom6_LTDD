@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/activity_bai01.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/activity_bai1.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/activity_bai2.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/dong_mon_an.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/dong_sinh_vien.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/layout_bai1.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/layout_bai2.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/BaocaoListView/app/src/main/res/layout/layout_bai3.xml" value="0.1947463768115942" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
