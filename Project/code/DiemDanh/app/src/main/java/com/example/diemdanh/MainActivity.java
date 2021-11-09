@@ -110,18 +110,46 @@ public class MainActivity extends AppCompatActivity
         //STT integer primary key autoincrement
         dtb.execSQL(sql);
     }
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
+    {
+        getMenuInflater().inflate(R.menu.menumonhoc, menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
 
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item)
+    {
+        switch (item.getItemId())
+        { 
+            case R.id.menuThemSV:
+            /*
+                Intent intent = new Intent(MainActivity.this, ThemSinhVien.class);
+*/
 
+                break;
 
+            case R.id.menuDanhSach:
+              /*  Intent intent5 = new Intent(MainActivity.this, DanhSachSinhVien.class);
+*/
+                break;
+            case R.id.menuXoa:
+                XacNhanXoa();
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }
 
     public void XoaMonHoc()
     {
         String tenmh = mh.getTenMonHoc();
         String tenlop = mh.getTenLop();
         String sql = "DELETE FROM MonHoc WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
-
+        String sql2 = "DELETE FROM LopHoc WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
+        String sql3 = "DELETE FROM LichSuDiemDanh WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
         dtb.execSQL(sql);
-
+        dtb.execSQL(sql2);
+        dtb.execSQL(sql3);
     }
     public void XacNhanXoa()
     {
