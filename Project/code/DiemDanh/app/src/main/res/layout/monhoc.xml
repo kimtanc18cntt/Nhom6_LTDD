@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imMonHoc"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/ic_baseline_class_24" />
+
+    <TextView
+        android:id="@+id/txtTenMonHoc"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/imMonHoc"
+        android:text="Tên môn học"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTenLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenMonHoc"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/imMonHoc"
+        android:text="Tên lớp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
