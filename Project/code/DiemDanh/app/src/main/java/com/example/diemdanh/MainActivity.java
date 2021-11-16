@@ -121,18 +121,21 @@ public class MainActivity extends AppCompatActivity
     public boolean onContextItemSelected(@NonNull MenuItem item)
     {
         switch (item.getItemId())
-        { 
+        {
             case R.id.menuThemSV:
-            /*
                 Intent intent = new Intent(MainActivity.this, ThemSinhVien.class);
-*/
 
+                String tenmh = mh.getTenMonHoc();
+                String tenlop = mh.getTenLop();
+                Bundle bundle = new Bundle();
+                bundle.putString("tenmonhoc", tenmh);
+                bundle.putString("tenlop", tenlop);
+
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
 
-            case R.id.menuDanhSach:
-              /*  Intent intent5 = new Intent(MainActivity.this, DanhSachSinhVien.class);
-*/
-                break;
+
             case R.id.menuXoa:
                 XacNhanXoa();
                 break;
@@ -146,10 +149,8 @@ public class MainActivity extends AppCompatActivity
         String tenlop = mh.getTenLop();
         String sql = "DELETE FROM MonHoc WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
         String sql2 = "DELETE FROM LopHoc WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
-        String sql3 = "DELETE FROM LichSuDiemDanh WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
         dtb.execSQL(sql);
         dtb.execSQL(sql2);
-        dtb.execSQL(sql3);
     }
     public void XacNhanXoa()
     {
