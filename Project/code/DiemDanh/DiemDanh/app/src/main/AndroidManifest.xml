@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme">
 
 
+
+        <activity android:name=".DanhSachSinhVien"></activity>
+        <activity android:name=".ThemSinhVien" />
         <activity android:name=".ThemMonHoc" />
         <activity android:name=".MainActivity">
             <intent-filter>

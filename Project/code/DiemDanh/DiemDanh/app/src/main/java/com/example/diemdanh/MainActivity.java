@@ -1,27 +1,26 @@
 package com.example.diemdanh;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.content.Intent;
+import android.view.ContextMenu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.view.LayoutInflater;
+import android.database.Cursor;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import java.util.ArrayList;
+import android.widget.TextView;
+import android.database.sqlite.SQLiteDatabase;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -135,7 +134,19 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
 
+            case R.id.menuDanhSach:
+                Intent intent1 = new Intent(MainActivity.this, DanhSachSinhVien.class);
 
+                String tenmh1 = mh.getTenMonHoc();
+                String tenlop1 = mh.getTenLop();
+                Bundle bundle1 = new Bundle();
+                bundle1.putString("tenmonhoc", tenmh1);
+                bundle1.putString("tenlop", tenlop1);
+
+                intent1.putExtras(bundle1);
+                startActivity(intent1);
+
+                break;
             case R.id.menuXoa:
                 XacNhanXoa();
                 break;
