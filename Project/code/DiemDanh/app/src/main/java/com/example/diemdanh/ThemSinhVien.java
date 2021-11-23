@@ -1,5 +1,7 @@
 package com.example.diemdanh;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class ThemSinhVien extends AppCompatActivity
 {
@@ -98,6 +98,9 @@ public class ThemSinhVien extends AppCompatActivity
                             +"', '"+ lop.getText().toString().trim() +"')";
                     dtb.execSQL(sql3);
                     Toast.makeText(ThemSinhVien.this, "Đã thêm sinh viên vào lớp học", Toast.LENGTH_LONG).show();
+                    tensinhvien.setText("");
+                    masinhvien.setText("");
+                    lop.setText("");
                 }
             }
         });

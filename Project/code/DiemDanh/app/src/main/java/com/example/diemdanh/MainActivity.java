@@ -1,27 +1,26 @@
 package com.example.diemdanh;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.content.Intent;
+import android.view.ContextMenu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.view.LayoutInflater;
+import android.database.Cursor;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import java.util.ArrayList;
+import android.widget.TextView;
+import android.database.sqlite.SQLiteDatabase;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -134,8 +133,44 @@ public class MainActivity extends AppCompatActivity
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
+            case R.id.menuDiemDanhThuong:
+                Intent intent2 = new Intent(MainActivity.this, DiemDanhThuong.class);
 
+                String tenmh2 = mh.getTenMonHoc();
+                String tenlop2 = mh.getTenLop();
+                Bundle bundle2 = new Bundle();
+                bundle2.putString("tenmonhoc", tenmh2);
+                bundle2.putString("tenlop", tenlop2);
 
+                intent2.putExtras(bundle2);
+                startActivity(intent2);
+                break;
+
+            case R.id.menuLichSu:
+                Intent intent3 = new Intent(MainActivity.this, LichSuDiemDanh.class);
+
+                String tenmh3 = mh.getTenMonHoc();
+                String tenlop3 = mh.getTenLop();
+                Bundle bundle3 = new Bundle();
+                bundle3.putString("tenmonhoc", tenmh3);
+                bundle3.putString("tenlop", tenlop3);
+
+                intent3.putExtras(bundle3);
+                startActivity(intent3);
+                break;
+            case R.id.menuDanhSach:
+                Intent intent5 = new Intent(MainActivity.this, DanhSachSinhVien.class);
+
+                String tenmh5 = mh.getTenMonHoc();
+                String tenlop5 = mh.getTenLop();
+                Bundle bundle5 = new Bundle();
+                bundle5.putString("tenmonhoc", tenmh5);
+                bundle5.putString("tenlop", tenlop5);
+
+                intent5.putExtras(bundle5);
+                startActivity(intent5);
+
+                break;
             case R.id.menuXoa:
                 XacNhanXoa();
                 break;
@@ -149,8 +184,10 @@ public class MainActivity extends AppCompatActivity
         String tenlop = mh.getTenLop();
         String sql = "DELETE FROM MonHoc WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
         String sql2 = "DELETE FROM LopHoc WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
+        String sql3 = "DELETE FROM LichSuDiemDanh WHERE TenMonHoc = '"+ tenmh +"' AND TenLop = '"+ tenlop +"'";
         dtb.execSQL(sql);
         dtb.execSQL(sql2);
+        dtb.execSQL(sql3);
     }
     public void XacNhanXoa()
     {
