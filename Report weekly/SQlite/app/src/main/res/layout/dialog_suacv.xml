@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#E1BC35"
+    >
+    <TextView
+        android:id="@+id/textsua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhập công việc"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#11ECAE"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/suaTenCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textsua"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập tên công việc"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/suaTenCV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btok"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        android:layout_below="@id/suaTenCV"
+        android:layout_toRightOf="@id/btok"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/bthuy"
+        />
+</RelativeLayout>

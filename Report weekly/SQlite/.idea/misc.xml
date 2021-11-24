@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/dialog_suacv.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/dialog_them_cv.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/dialog_themcv.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/dong_cong_viec.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/layout_main.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/layout/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Admin/Desktop/SQlite/app/src/main/res/menu/add_congviec.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
