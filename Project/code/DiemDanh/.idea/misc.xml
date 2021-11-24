@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_chi_tiet_diem_danh.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_danh_sach_sinh_vien.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_demo.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_diem_danh_thuong.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_lich_su_diem_danh.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_main.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_them_mon_hoc.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/activity_them_sinh_vien.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/chitiet.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/diemdanhthuong.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/dssv.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/lichsu.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/layout/monhoc.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Desktop/MSSQL15.MSSQLSERVER01/11/DiemDanh/app/src/main/res/menu/menumonhoc.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

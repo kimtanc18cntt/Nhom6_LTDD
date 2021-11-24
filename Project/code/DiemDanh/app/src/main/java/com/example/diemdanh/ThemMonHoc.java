@@ -41,7 +41,7 @@ public class ThemMonHoc extends AppCompatActivity
             public void onClick(View view)
             {
                 boolean th1 = false;
-                //boolean th2 = false;
+                boolean th2 = false;
                 String tenmh, tenl;
                 String ten = tenmonhoc.getText().toString().trim();
                 String lop = tenlop.getText().toString().trim();
@@ -70,11 +70,14 @@ public class ThemMonHoc extends AppCompatActivity
                     tenmonhoc.setError("Lớp học đã tồn tại môn học này");
                     tenmonhoc.requestFocus();
                 }else
-               {
+                {
                     String sql3 = "INSERT INTO MonHoc(TenMonHoc, TenLop) VALUES ('"+ tenmonhoc.getText().toString().trim() +"', " +
                             "'"+ tenlop.getText().toString().trim() +"')";
                     dtb.execSQL(sql3);
                     Toast.makeText(ThemMonHoc.this, "Tạo môn học thành công", Toast.LENGTH_LONG).show();
+                    finish();
+                    Intent intent = new Intent(ThemMonHoc.this, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -89,7 +92,7 @@ public class ThemMonHoc extends AppCompatActivity
     public void TaoMonHoc()
     {
         String sql = "CREATE TABLE IF NOT EXISTS MonHoc (TenMonHoc text, TenLop text)";
-
+        //STT integer primary key autoincrement
         dtb.execSQL(sql);
     }
 }

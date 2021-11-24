@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Thêm Môn Học"
+        android:textColor="#2A8A10"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
