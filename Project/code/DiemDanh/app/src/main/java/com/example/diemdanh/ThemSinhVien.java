@@ -79,7 +79,7 @@ public class ThemSinhVien extends AppCompatActivity
                 {
                     lop.setError("Bạn chưa nhập lớp");
                     lop.requestFocus();
-                } else if (masinhvien.getText().toString().length() != 14)
+                } else if (masinhvien.getText().toString().length() != 10)
                 {
                     masinhvien.setError("Độ dài mã sinh viên không hợp lệ");
                     masinhvien.requestFocus();
@@ -98,9 +98,6 @@ public class ThemSinhVien extends AppCompatActivity
                             +"', '"+ lop.getText().toString().trim() +"')";
                     dtb.execSQL(sql3);
                     Toast.makeText(ThemSinhVien.this, "Đã thêm sinh viên vào lớp học", Toast.LENGTH_LONG).show();
-                    tensinhvien.setText("");
-                    masinhvien.setText("");
-                    lop.setText("");
                 }
             }
         });

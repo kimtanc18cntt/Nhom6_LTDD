@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DanhSachSinhVien"></activity>
+        <activity android:name=".DiemDanhBluetooth" />
         <activity android:name=".ChiTietDiemDanh" />
         <activity android:name=".LichSuDiemDanh" />
         <activity android:name=".DiemDanhThuong" />

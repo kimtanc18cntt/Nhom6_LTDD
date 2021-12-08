@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import android.widget.TextView;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -145,7 +147,18 @@ public class MainActivity extends AppCompatActivity
                 intent2.putExtras(bundle2);
                 startActivity(intent2);
                 break;
+            case R.id.menuDiemDanhBL:
+                Intent intent4 = new Intent(MainActivity.this, DiemDanhBluetooth.class);
 
+                String tenmh4 = mh.getTenMonHoc();
+                String tenlop4 = mh.getTenLop();
+                Bundle bundle4 = new Bundle();
+                bundle4.putString("tenmonhoc", tenmh4);
+                bundle4.putString("tenlop", tenlop4);
+
+                intent4.putExtras(bundle4);
+                startActivity(intent4);
+                break;
             case R.id.menuLichSu:
                 Intent intent3 = new Intent(MainActivity.this, LichSuDiemDanh.class);
 
@@ -208,9 +221,13 @@ public class MainActivity extends AppCompatActivity
             public void onClick(DialogInterface dialogInterface, int i)
             {
                 XoaMonHoc();
-                finish();
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent);
+                arrayAdapter.clear();
+                LoadData();
+                arrayAdapter.notifyDataSetChanged();
+                Toast.makeText(MainActivity.this, "Đã xóa môn học", Toast.LENGTH_LONG).show();
+                //finish();
+                //Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                //startActivity(intent);
             }
         });
         aler.show();

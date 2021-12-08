@@ -7,6 +7,9 @@
         android:id="@+id/menuDiemDanhThuong"
         android:title="Điểm Danh Thủ Công" />
     <item
+        android:id="@+id/menuDiemDanhBL"
+        android:title="Điểm Danh Bluetooth" />
+    <item
         android:id="@+id/menuLichSu"
         android:title="Lịch Sử Điểm Danh" />
     <item

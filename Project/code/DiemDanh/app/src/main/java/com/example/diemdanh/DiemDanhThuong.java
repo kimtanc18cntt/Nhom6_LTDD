@@ -98,11 +98,8 @@ public class DiemDanhThuong extends AppCompatActivity
                             } else {
                                 arr1.add(position);
                             }
-
-
                     }
                 });
-
 
                 SinhVien sv = arrayList1.get(position);
 
@@ -143,9 +140,6 @@ public class DiemDanhThuong extends AppCompatActivity
                 }
                 Toast.makeText(DiemDanhThuong.this, "Đã lưu danh sách điểm danh \n" + txt, Toast.LENGTH_LONG).show();
                 arr1.clear();
-                finish();
-                Intent intent = new Intent(DiemDanhThuong.this, MainActivity.class);
-                startActivity(intent);
                 //arrayList2.clear();
                 //}
             }

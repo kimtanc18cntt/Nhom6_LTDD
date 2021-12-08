@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,9 +32,7 @@ public class DanhSachSinhVien extends AppCompatActivity
     TextView tenmonhoc, tenlop;
     private SQLiteDatabase dtb;
     ArrayAdapter<SinhVien> arrayAdapter;
-    ArrayAdapter<SinhVien> arrayAdapter2;
     ArrayList<SinhVien> arrayList1 = new ArrayList<>();
-    ArrayList<SinhVien> arrayList2 = new ArrayList<>();
     SinhVien sv;
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -159,16 +158,19 @@ public class DanhSachSinhVien extends AppCompatActivity
             public void onClick(DialogInterface dialogInterface, int i)
             {
                 XoaSinhVien();
-                finish();
-                Intent intent = new Intent(DanhSachSinhVien.this, DanhSachSinhVien.class);
-                String tenmh = tenmonhoc.getText().toString().trim();
-                String tl = tenlop.getText().toString().trim();
-                Bundle bundle = new Bundle();
-                bundle.putString("tenmonhoc", tenmh);
-                bundle.putString("tenlop", tl);
-                intent.putExtras(bundle);
-                startActivity(intent);
-                //startActivity(intent);
+//                finish();
+//                Intent intent = new Intent(DanhSachSinhVien.this, DanhSachSinhVien.class);
+//                String tenmh = tenmonhoc.getText().toString().trim();
+//                String tl = tenlop.getText().toString().trim();
+//                Bundle bundle = new Bundle();
+//                bundle.putString("tenmonhoc", tenmh);
+//                bundle.putString("tenlop", tl);
+//                intent.putExtras(bundle);
+//                startActivity(intent);
+                arrayAdapter.clear();
+                LoadData();
+                arrayAdapter.notifyDataSetChanged();
+                Toast.makeText(DanhSachSinhVien.this, "Đã xóa sinh viên", Toast.LENGTH_LONG).show();
             }
         });
         aler.show();
