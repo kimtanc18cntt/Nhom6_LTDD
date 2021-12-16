@@ -15,7 +15,8 @@
         android:layout_marginLeft="3dp"
         android:layout_toRightOf="@id/imSinhVienDS"
         android:text="Tên sinh viên"
-        android:textSize="15sp"
+        android:textColor="#0C34AC"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
@@ -26,6 +27,7 @@
         android:layout_marginLeft="3dp"
         android:layout_toRightOf="@id/imSinhVienDS"
         android:text="Tên lớp"
+        android:textColor="#AC0C0C"
         android:textSize="15sp"
         android:textStyle="bold" />
 
@@ -41,5 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/txt"
         android:text="Mã sinh viên"
+        android:textColor="#3A9F0E"
         android:textStyle="bold"/>
 </RelativeLayout>

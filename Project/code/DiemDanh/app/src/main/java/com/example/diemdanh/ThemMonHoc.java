@@ -75,6 +75,9 @@ public class ThemMonHoc extends AppCompatActivity
                             "'"+ tenlop.getText().toString().trim() +"')";
                     dtb.execSQL(sql3);
                     Toast.makeText(ThemMonHoc.this, "Tạo môn học thành công", Toast.LENGTH_LONG).show();
+                    finish();
+                    Intent intent = new Intent(ThemMonHoc.this, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });

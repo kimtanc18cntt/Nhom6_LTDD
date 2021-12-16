@@ -17,7 +17,8 @@
         android:layout_marginLeft="3dp"
         android:layout_toRightOf="@id/imMonHoc"
         android:text="Tên môn học"
-        android:textSize="15sp"
+        android:textColor="#1936CA"
+        android:textSize="22sp"
         android:textStyle="bold" />
 
     <TextView
@@ -28,7 +29,8 @@
         android:layout_marginLeft="3dp"
         android:layout_toRightOf="@id/imMonHoc"
         android:text="Tên lớp"
-        android:textSize="15sp"
+        android:textColor="#C10A26"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

@@ -16,6 +16,7 @@
         android:layout_marginTop="11dp"
         android:layout_toRightOf="@id/imMonHoc"
         android:text="Tên môn học"
-        android:textSize="15sp"
+        android:textColor="#0D149F"
+        android:textSize="22sp"
         android:textStyle="bold" />
 </RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThemMonHoc">
+    tools:context=".ThemMonHoc"
+    android:background="#FFEB3B">
 
     <Button
         android:id="@+id/btnTroVeTuThemMonHoc"
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Thêm Môn Học"
+        android:textColor="#2D7308"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:text="Tên môn học:"
+        android:textColor="#000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
@@ -61,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Tên lớp:"
+        android:textColor="#000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"

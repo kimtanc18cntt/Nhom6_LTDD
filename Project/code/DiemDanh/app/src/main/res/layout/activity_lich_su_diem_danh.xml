@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LichSuDiemDanh">
+    tools:context=".LichSuDiemDanh"
+    android:background="#FFEB3B">
 
     <Button
         android:id="@+id/btnTroVeTuLSDD"
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:text="Lịch Sử Điểm Danh"
+        android:textColor="#0F3BAC"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Môn học:"
+        android:textColor="#000"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
@@ -60,6 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
+        android:textColor="#1E8E09"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -72,6 +78,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Tên Lớp:"
+        android:textColor="#000"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -84,6 +92,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="TextView"
+        android:textColor="#D50E0E"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"

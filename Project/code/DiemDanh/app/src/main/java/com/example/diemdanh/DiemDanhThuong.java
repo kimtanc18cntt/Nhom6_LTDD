@@ -43,6 +43,7 @@ public class DiemDanhThuong extends AppCompatActivity
     String txt1;
     SinhVien sv;
 
+
     private SQLiteDatabase dtb;
     ArrayAdapter<SinhVien> arrayAdapter;
     ArrayList<SinhVien> arrayList1 = new ArrayList<>();
@@ -140,6 +141,9 @@ public class DiemDanhThuong extends AppCompatActivity
                 }
                 Toast.makeText(DiemDanhThuong.this, "Đã lưu danh sách điểm danh \n" + txt, Toast.LENGTH_LONG).show();
                 arr1.clear();
+                finish();
+                Intent intent = new Intent(DiemDanhThuong.this, MainActivity.class);
+                startActivity(intent);
                 //arrayList2.clear();
                 //}
             }
@@ -201,55 +205,6 @@ public class DiemDanhThuong extends AppCompatActivity
         arrayAdapter.notifyDataSetChanged();
     }
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
-    {
-        getMenuInflater().inflate(R.menu.menusinhvien, menu);
-        super.onCreateContextMenu(menu, v, menuInfo);
-    }
 
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.menuXoaSinhVien:
-                XacNhanXoa();
-                break;
-        }
-        return super.onContextItemSelected(item);
-    }
-    public void XoaSinhVien()
-    {
-        String masv = sv.getMaSinhVien();
-        String sql = "DELETE FROM LopHoc WHERE TenMonHoc = '"+ tenmonhoc.getText().toString().trim() +"' AND TenLop = '"+
-                tenlop.getText().toString().trim() +"' AND MaSinhVien = '"+ masv +"'";
-        dtb.execSQL(sql);
-    }
-    public void XacNhanXoa()
-    {
-        final AlertDialog.Builder aler = new AlertDialog.Builder(this);
-        aler.setTitle("Điểm Danh");
-        aler.setMessage("Bạn có chắc muốn xóa?");
-        aler.setPositiveButton("Đóng", new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
-            {
 
-            }
-        });
-        aler.setNegativeButton("Xóa", new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i)
-            {
-                XoaSinhVien();
-                finish();
-                Intent intent = new Intent(DiemDanhThuong.this, DiemDanhThuong.class);
-                startActivity(intent);
-            }
-        });
-        aler.show();
-    }
 }

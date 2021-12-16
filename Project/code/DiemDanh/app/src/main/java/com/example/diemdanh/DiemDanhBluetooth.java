@@ -84,6 +84,9 @@ public class DiemDanhBluetooth extends AppCompatActivity
                     dtb.execSQL(sql);
                 }
                 Toast.makeText(DiemDanhBluetooth.this, "Đã lưu danh sách điểm danh", Toast.LENGTH_LONG).show();
+                finish();
+                Intent intent = new Intent(DiemDanhBluetooth.this, MainActivity.class);
+                startActivity(intent);
             }
         });
         quet.setOnClickListener(new View.OnClickListener()
@@ -118,7 +121,7 @@ public class DiemDanhBluetooth extends AppCompatActivity
         tenmonhoc = (TextView)findViewById(R.id.txtMonHocBL);
         tenlop = (TextView)findViewById(R.id.txtTenLopBL);
         ngay = (TextView)findViewById(R.id.txtNgayBL);
-        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter(); // khoi tao bo dieu hop blutool
     }
 
     @Override
@@ -233,8 +236,8 @@ public class DiemDanhBluetooth extends AppCompatActivity
                                 th1 = false;
                         }
                         if (th1 == false) {
-                            arrayAdapter.add(Device.getName());
-                            arrayList.add(Device.getName());
+                            arrayAdapter.add(Device.getName());//*
+                            arrayList.add(Device.getName());//*
                         }
                     }
                     else
